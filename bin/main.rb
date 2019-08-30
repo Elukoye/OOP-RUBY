@@ -1,18 +1,35 @@
+class Logic
+  def initialize
+    @board =(1..9).to_a 
+  end 
 
-# display welcome message
-# ask for player's name i.e player1 and player2
-# take their inputs and assign tokens i.e "X" , "O"
-# until the game is over 
-# loop 
-# start game
-# ask for player position and validate input
-# if input is valid and position is not taken on the board
-# place token on board
-# check for winning combination
-# if winn 
-# congratulate the winner
-# else if draw inform players
-# break
-# else switch players
-# 
+  def display
+    (1..9).each do |i|
+      print " | " + @board[i - 1].to_s
+      if i % 3 == 0 
+        print " | \n" 
+      end 
+    end
+  end
+
+  def start_game
+    puts " Welcome to tic-tac-toe"
+    puts "Input name: " 
+    player_1 = gets.chomp.capitalize
+    puts "#{player_1} is x"
+    puts "Input name: " 
+    player_2 = gets.chomp.capitalize
+    puts "#{player_2} is o"
+    puts "Lets play; #{player_1} [x], choose  a number btn 1-9: "
+    puts "                                                      "
+  end
+end
+game = Logic.new
+game.start_game
+game.display
+ 
+
+ 
+ 
+ 
 
