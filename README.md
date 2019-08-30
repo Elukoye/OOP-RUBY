@@ -1,6 +1,6 @@
 # OOP-Ruby(Object-oriented programming in Ruby)
 
-#-TAC-TOE
+# TIC-TAC-TOE
 #
 OOP (Object Oriented Programming) in RUBY
 #
