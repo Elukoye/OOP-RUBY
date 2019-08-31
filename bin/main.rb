@@ -49,8 +49,7 @@ def game_loop
   until false do
      c_player = switchplayer(c_player)
      take_turns(c_player)       
-     break if @board.win? || @board.full?       
-        
+     break if @board.win? || @board.full?             
   end 
    winner = @board.winner
    mshindi =''     
@@ -68,3 +67,11 @@ end
 
 game=Logic.new
 game.game_loop
+
+ 
+
+ 
+ 
+ 
+
+
