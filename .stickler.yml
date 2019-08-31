@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 linters:
   rubocop:
     display_cop_names: true
@@ -7,4 +8,15 @@ files:
     - "db/*"
     - "config/*"
     - "Guardfile"
+=======
+linters:
+  rubocop:
+    display_cop_names: true
+files:
+  ignore:
+    - "bin/*"
+    - "db/*"
+    - "config/*"
+    - "Guardfile"
+>>>>>>> readme_game_instructions
     - "Rakefile"
