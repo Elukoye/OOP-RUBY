@@ -20,7 +20,7 @@ RSpec.describe Board do
       expect(board.win?).to be false
     end
     
-    it 'checks for win on board' do
+    it 'checks for win situation' do
       board.replace_var(0,"x")
       board.replace_var(1,"x")
       board.replace_var(2,"x")
@@ -49,7 +49,7 @@ RSpec.describe Board do
     end
 
     describe '#rem_nums' do 
-      it 'removes players choice form the array' do
+      it 'removes the choosen number from the array' do
          board.replace_var(1,"x")
          expect( board.rem_nums).to eql([1, 3, 4, 5, 6, 7, 8, 9])
       end
