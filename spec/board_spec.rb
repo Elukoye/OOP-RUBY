@@ -6,5 +6,13 @@ RSpec.describe Board do
             expect(board.display).to eq(1..9)
         end
     end
+
+    describe '#position_taken?' do 
+        it 'checks if there is space on the board' do
+          expect(board.position_taken?(1)).to eql(false)
+        end 
+
+    end
+    
 end
 
