@@ -25,5 +25,24 @@ RSpec.describe Board do
           expect(board.win?).to eql(true)
         end
       end
+
+      describe '#full?' do
+        it 'checks if board is not full' do
+         expect(board.full?).to eql(false)
+       end 
+
+       it 'checks if board is full' do 
+         board.replace_var(0,"x")
+         board.replace_var(1,"o")
+         board.replace_var(2,"x")
+         board.replace_var(3,"o")
+         board.replace_var(4,"x")
+         board.replace_var(5,"o")
+         board.replace_var(6,"x")
+         board.replace_var(7,"o")
+         board.replace_var(8,"x")
+         expect(board.board).to eql(["x", "o", "x", "o", "x", "o", "x", "o", "x"])
+       end
+     end 
 end
 
